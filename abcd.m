@@ -5,6 +5,7 @@ fclose(fid);
 x = 36;
 y = 40;
 
+% Plot 1: plots temperatures
 a=[data{1,1}];
 for i=1:10
     r=(y-x)*rand(1,1) + x
@@ -32,7 +33,7 @@ data = textscan(fid,'%d','delimiter','\n');
 fclose(fid);
 % hold on plot(data{1,1},data{1,1},'bd');
 c = 35;
-d = 70;
+fd = 70;
 
 h=[data{1,1}];
 for i=1:10
